@@ -8,7 +8,7 @@ This repository contains the Maven files necessary to build and release
 Eclipse http://wiki.eclipse.org/ocl/[OCL]
 onto a Maven repository or to simply build it on your machine.
 
-The artifacts are available on Bintray  https://dl.bintray.com/sunye/AtlanMod[here].
+The artifacts are available on Bintray  https://dl.bintray.com/atlanmod/unveil[here].
 
 == Included Eclipse Plugins
 
@@ -24,6 +24,12 @@ The artifacts are available on Bintray  https://dl.bintray.com/sunye/AtlanMod[he
 
 | 6.13.0
 | 2020-12
+
+| 6.12.0
+| 2020-06
+
+| 6.11.0
+| 2020-03
 
 |===
 
