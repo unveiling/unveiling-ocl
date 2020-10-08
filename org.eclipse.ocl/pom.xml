@@ -4,7 +4,7 @@
     <parent>
         <artifactId>unveil-ocl</artifactId>
         <groupId>org.atlanmod.unveil</groupId>
-        <version>${release.version}</version>
+        <version>6.13.0</version>
     </parent>
 
     <artifactId>org.eclipse.ocl</artifactId>
@@ -12,7 +12,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.atlanmod.emf</groupId>
+            <groupId>org.atlanmod.unveil</groupId>
             <artifactId>org.eclipse.ocl.p2</artifactId>
             <version>${project.version}</version>
             <classifier>repackaged</classifier>
