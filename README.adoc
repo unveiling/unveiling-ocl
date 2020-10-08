@@ -41,7 +41,7 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
             </snapshots>
             <id>bintray-atlanmod</id>
             <name>bintray</name>
-            <url>https://dl.bintray.com/sunye/AtlanMod</url>
+            <url>https://dl.bintray.com/atlanmod/unveil</url>
         </repository>
     </repositories>
 ----
