@@ -1,4 +1,4 @@
-= Unveil OCL
+= Unveiling OCL
 
 *Maven Distribution for Eclipse OCL*
 
@@ -8,7 +8,7 @@ This repository contains the Maven files necessary to build and release
 Eclipse http://wiki.eclipse.org/ocl/[OCL]
 onto a Maven repository or to simply build it on your machine.
 
-The artifacts are available on Bintray  https://dl.bintray.com/atlanmod/unveil[here].
+The artifacts are available on Bintray  https://dl.bintray.com/atlanmod/unveiling[here].
 
 == Included Eclipse Plugins
 
@@ -20,7 +20,7 @@ The artifacts are available on Bintray  https://dl.bintray.com/atlanmod/unveil[h
 == Versions
 
 |===
-| Unveil OCL | Eclipse OCL | Eclipse
+| unveiling OCL | Eclipse OCL | Eclipse
 
 | 6.13.0
 | 6.13.0
@@ -50,7 +50,7 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
             </snapshots>
             <id>bintray-atlanmod</id>
             <name>bintray</name>
-            <url>https://dl.bintray.com/atlanmod/unveil</url>
+            <url>https://dl.bintray.com/atlanmod/unveiling</url>
         </repository>
     </repositories>
 ----

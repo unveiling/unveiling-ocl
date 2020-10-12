@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>unveil-ocl</artifactId>
-        <groupId>org.atlanmod.unveil</groupId>
-        <version>6.13.0</version>
+        <artifactId>unveiling-ocl</artifactId>
+        <groupId>org.atlanmod.unveiling</groupId>
+        <version>6.13.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>org.eclipse.ocl</artifactId>
@@ -12,7 +12,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.atlanmod.unveil</groupId>
+            <groupId>org.atlanmod.unveiling</groupId>
             <artifactId>org.eclipse.ocl.p2</artifactId>
             <version>${project.version}</version>
             <classifier>repackaged</classifier>

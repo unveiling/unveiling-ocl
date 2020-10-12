@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.atlanmod.unveil</groupId>
-    <artifactId>unveil-ocl</artifactId>
-    <version>6.13.0</version>
+    <groupId>org.atlanmod.unveiling</groupId>
+    <artifactId>unveiling-ocl</artifactId>
+    <version>6.13.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Maven distribution for Eclipse OCL</description>
 
@@ -30,7 +30,7 @@
         <repository>
             <id>bintray-sunye</id>
             <name>sunye-atlanMod</name>
-            <url>https://api.bintray.com/maven/atlanmod/unveil/unveil-ocl/;publish=1</url>
+            <url>https://api.bintray.com/maven/atlanmod/unveiling/unveiling-ocl/;publish=1</url>
         </repository>
     </distributionManagement>
 
