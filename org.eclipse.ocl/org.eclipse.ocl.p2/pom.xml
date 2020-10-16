@@ -2,29 +2,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <artifactId>unveiling-ocl</artifactId>
+        <artifactId>unveiling-p2-parent</artifactId>
         <groupId>org.atlanmod.unveiling</groupId>
-        <version>6.13.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
+        <version>1.0.0</version>
+        <relativePath/>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>org.eclipse.ocl.p2</artifactId>
     <packaging>eclipse-plugin</packaging>
 
+    <properties>
+        <ocl.version>6.13.0</ocl.version>
+        <eclipse.version>2020-12</eclipse.version>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-maven-plugin</artifactId>
-                <version>${tycho.version}</version>
                 <extensions>true</extensions>
             </plugin>
 
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-packaging-plugin</artifactId>
-                <version>${tycho.version}</version>
                 <configuration>
                     <strictVersions>false</strictVersions>
                 </configuration>
@@ -33,7 +36,6 @@
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-source-plugin</artifactId>
-                <version>${tycho.version}</version>
                 <executions>
                     <execution>
                         <id>plugin-source</id>
@@ -47,13 +49,11 @@
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-versions-plugin</artifactId>
-                <version>${tycho.version}</version>
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.2</version>
                 <executions>
                     <execution>
                         <id>unpack-dependencies</id>
@@ -78,7 +78,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.3.0</version>
                 <configuration>
                     <descriptors>
                         <descriptor>src/main/assembly/repackaged.xml</descriptor>
@@ -96,4 +95,17 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>photon</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/releases/${eclipse.version}/</url>
+        </repository>
+        <repository>
+            <id>ocl</id>
+            <layout>p2</layout>
+            <url>https://download.eclipse.org/modeling/mdt/ocl/updates/milestones/${ocl.version}/</url>
+        </repository>
+    </repositories>
 </project>

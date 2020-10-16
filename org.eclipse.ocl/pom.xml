@@ -4,7 +4,7 @@
     <parent>
         <artifactId>unveiling-ocl</artifactId>
         <groupId>org.atlanmod.unveiling</groupId>
-        <version>6.13.1-SNAPSHOT</version>
+        <version>6.13.0</version>
     </parent>
 
     <artifactId>org.eclipse.ocl</artifactId>
