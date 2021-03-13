@@ -62,7 +62,7 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
 [source,xml]
 ----
 <dependency>
-    <groupId>org.atlanmod.emf</groupId>
+    <groupId>org.atlanmod.unveiling</groupId>
     <artifactId>org.eclipse.ocl</artifactId>
     <version>6.13.0</version>
     <type>pom</type>
